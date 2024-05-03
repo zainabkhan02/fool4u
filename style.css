@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+     --font-sans: "Poppins", sans-serif;
+  --font-display: "Lobster", sans-serif;
+}
  .message-container {
             position: absolute;
             top: 10%;
@@ -16,8 +20,8 @@
         }
 
         .message {
-            font-family: "Lobster", sans-serif;
-            font-size: 36px;
+            font-family: var(--font-display);
+            font-size: 2px;
             color: #f8bde1;
             text-shadow: 1px 2px 2px white;
             animation: glowing 4s infinite;
