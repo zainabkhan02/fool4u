@@ -5,15 +5,35 @@
     margin: 0;
     box-sizing: border-box;
 }
-.message {
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 20px;
-    background: linear-gradient(45deg, babypink, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+ .message-container {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        .message {
+            font-family: 'Sacramento', cursive;
+            font-size: 2em;
+            color: #f8bde1;
+            text-shadow: 0 0 10px #f8bde1, 0 0 20px #eecedb, 0 0 30px #f3b7dc;
+            animation: glowing 4s infinite;
+        }
+
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 10px #f8bde1, 0 0 20px #f8bde1, 0 0 30px #f8bde1;
+            }
+            50% {
+                text-shadow: 0 0 20px #f8bde1, 0 0 30px #f8bde1, 0 0 40px #f8bde1;
+            }
+            100% {
+                text-shadow: 0 0 10px #f8bde1, 0 0 20px #f8bde1, 0 0 30px #f8bde1;
+            }
+        }
 :root{
     --color-bg: linear-gradient(to top,#fddffd,#1d0747);
     --color-glass:linear-gradient(to left,#142544,#1a9092);
