@@ -16,10 +16,10 @@
         }
 
         .message {
-            font-family: 'Sacramento', cursive;
-            font-size: 2em;
+            font-family: "Lobster", sans-serif;
+            font-size: 36px;
             color: #f8bde1;
-            text-shadow: 0 0 10px #f8bde1, 0 0 20px #eecedb, 0 0 30px #f3b7dc;
+            text-shadow: 1px 2px 2px white;
             animation: glowing 4s infinite;
         }
 
